@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Films</title>
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="/films" method="post">
+            <h2>Enter your postcode</h2>
+            <div class="inputbox">
+              <ion-icon name="map-outline"></ion-icon>
+              <input type="text" name="postcode" required />
+              <label for="">Postcode</label>
+            </div>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -27,36 +27,9 @@ section {
   justify-content: center;
   align-items: center;
 }
-.carousel {
-  max-width: 60%; /* Adjust the width to your preference */
-  max-height: 60%; /* Adjust the height to your preference */
-  margin: 0 auto; /* Center the carousel */
-}
-
-.carousel img {
-  max-height: 100%; /* Scale images proportionally to the carousel height */
-  object-fit: contain; /* Ensure images are scaled properly */
-}
-.carousel-caption {
-  position: absolute;
-  bottom: 10px; /* Adjust this value to change the distance from the bottom */
-  transform: translateX(-12.5%);
-  width: 300px;
-  height: 150px;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  backdrop-filter: blur(30px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* Add this line to stack elements vertically */
-}
-
-
 .film-box {
   position: relative;
-  width: 1350px;
+  width: 1300px;
   height: 600px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
