@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+
+    <!link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Ratings</title>
+  </head>
+  <body>
+    <section>
+      <div class="ratings-box">
+        <div class="form-value">
+          <h2>Your age is <br />{{ age }}</h2>
+          <div class="txtbox">
+            <h3>You cannot see any films</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
