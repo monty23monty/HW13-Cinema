@@ -62,6 +62,9 @@ def age():
         elif age <= 12:
             print("You can see PG, U and 12 certificate films.")
             return render_template("age_12.html", age=age)
+        elif age < 18:
+            print("You can watch, U, PG, 12A and 15 certificate films")
+            return render_template("age_15.html", age=age)
 
         elif age >= 18:
             print("You can see films of any certificate.")
@@ -162,7 +165,6 @@ def view():
         # Get the current date and format it as required
         current_date = datetime.date.today()
         formatted_date = current_date.strftime("%Y-%m-%d")
-        formatted_date = "2023-04-15"  # This line is only for testing
         print(formatted_date)
         # Construct the URL to fetch data from
         url = f"https://www.cineworld.co.uk/uk/data-api-service/v1/quickbook/10108/film-events/in-cinema/{code}/at-date/{formatted_date}?attr=&lang=en_GB"

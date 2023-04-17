@@ -17,7 +17,12 @@
             <h2>Enter your postcode</h2>
             <div class="inputbox">
               <ion-icon name="map-outline"></ion-icon>
-              <input type="text" name="postcode" required />
+              <input
+                type="text"
+                name="postcode"
+                pattern="^(GIR ?0AA|[A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]([0-9ABEHMNPRV-Y])?)|[0-9][A-HJKPS-UW]) ?[0-9][ABD-HJLNP-UW-Z]{2})$"
+                required
+              />
               <label for="">Postcode</label>
             </div>
             <button>Submit</button>

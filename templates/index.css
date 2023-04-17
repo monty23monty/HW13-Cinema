@@ -27,9 +27,35 @@ section {
   justify-content: center;
   align-items: center;
 }
+.carousel {
+  max-width: 60%; /* Adjust the width to your preference */
+  max-height: 60%; /* Adjust the height to your preference */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel img {
+  max-height: 100%; /* Scale images proportionally to the carousel height */
+  object-fit: contain; /* Ensure images are scaled properly */
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 10px; /* Adjust this value to change the distance from the bottom */
+  transform: translateX(-12.5%);
+  width: 300px;
+  height: 150px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Add this line to stack elements vertically */
+}
+
 .film-box {
   position: relative;
-  width: 1300px;
+  width: 1350px;
   height: 600px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -47,7 +73,6 @@ section {
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   backdrop-filter: blur(15px);
-  display: flex;
   justify-content: center;
   align-items: stretch;
 }
@@ -64,9 +89,11 @@ h3 {
   left: 10%;
 }
 .images-box {
-  position: relative;
-  top: 20%;
+  position: absolute;
+  top: 25%;
+  left: 7.5%;
   display: flex;
+  border: 2px solid rgba(0, 255, 191, 0.5);
   width: 500px;
   height: 200px;
   justify-content: space-around;
@@ -74,15 +101,19 @@ h3 {
 }
 .button-box {
   position: relative;
-  top: 22%;
+  top: 67.5%;
+  left: 7.5%;
   width: 500px;
   height: 40px;
   justify-content: center;
   align-items: center;
+  border: 2px solid rgba(21, 255, 0, 0.5);
 }
 .button-box-2 {
   position: relative;
-  top: 20%;
+  border: 2px solid rgb(255, 153, 0);
+  top: 65%;
+  left: 7.5%;
   width: 500px;
   height: 40px;
   justify-content: center;

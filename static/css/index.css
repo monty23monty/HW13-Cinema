@@ -53,7 +53,6 @@ section {
   flex-direction: column; /* Add this line to stack elements vertically */
 }
 
-
 .film-box {
   position: relative;
   width: 1350px;
@@ -74,7 +73,6 @@ section {
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   backdrop-filter: blur(15px);
-  display: flex;
   justify-content: center;
   align-items: stretch;
 }
@@ -91,8 +89,9 @@ h3 {
   left: 10%;
 }
 .images-box {
-  position: relative;
-  top: 20%;
+  position: absolute;
+  top: 25%;
+  left: 7.5%;
   display: flex;
   width: 500px;
   height: 200px;
@@ -101,7 +100,8 @@ h3 {
 }
 .button-box {
   position: relative;
-  top: 22%;
+  top: 67.5%;
+  left: 7.5%;
   width: 500px;
   height: 40px;
   justify-content: center;
@@ -109,7 +109,8 @@ h3 {
 }
 .button-box-2 {
   position: relative;
-  top: 20%;
+  top: 65%;
+  left: 7.5%;
   width: 500px;
   height: 40px;
   justify-content: center;
